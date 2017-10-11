@@ -1,4 +1,7 @@
 get '/users/new' do
+  if session[:id]
+    @user = User.find_by(session[:id])
+  end
 
   erb :'/users/new'
 end

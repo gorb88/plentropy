@@ -1,4 +1,7 @@
 get '/sessions/new' do
+  if session[:id]
+    @user = User.find_by(session[:id])
+  end
 
   erb :'/sessions/new'
 end
@@ -16,4 +19,9 @@ post '/sessions' do
     # wrong user error
   end
   erb :'/sessions/new'
+end
+
+get '/sessions/logout' do
+  session.clear
+  redirect '/'
 end
