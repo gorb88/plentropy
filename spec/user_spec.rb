@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe User do
 
-  let!(user){User.create({ username: 'gorb', email: "gorb@gorb.gov"})}
+  let!(:user){User.create({ username: 'gorb', email: "gorb@gorb.gov"})}
 
   it 'has a username' do
 
