@@ -1,0 +1,22 @@
+<div class="container">
+
+  <div class="plants">
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Species</th>
+        <th>Description</th>
+        <th>Living?</th>
+      </tr>
+      <% @plants.each do |plant| %>
+        <tr>
+          <td><%= plant.name %></td>
+          <td><%= plant.species %></td>
+          <td><%= plant.description %></td>
+          <td><%= plant.living.to_s %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+
+</div>
