@@ -22,7 +22,7 @@ describe Plant do
     end
 
     it 'has a deadness' do
-      expect(plant.alive).to eq(true)
+      expect(plant.living).to eq(true)
     end
   end
 
