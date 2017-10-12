@@ -27,6 +27,7 @@ end
 
 get '/users/:id' do
   @user = User.find(params[:id])
-  @plants = @user.plants
-  erb :'/plants/index'
+  @living_plants = @user.plants.select{|plant| plant.living}
+  @dead_plants = @user.plants.select{|plant| !plant.living}
+  erb :'/users/show'
 end
