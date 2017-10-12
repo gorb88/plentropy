@@ -1,34 +1,13 @@
 
 <div class="plants">
   <h2>Living Plants</h2>
-  <table>
-    <tr>
-      <th>Name</th>
-      <th>Species</th>
-      <th>Description</th>
-    </tr>
-    <% @living_plants.each do |plant| %>
-      <tr>
-        <td><%= plant.name %></td>
-        <td><%= plant.species %></td>
-        <td><%= plant.description %></td>
-      </tr>
+    <% living_plants.each do |plant| %>
+    <%= erb :'/plants/_block', locals: {plant: plant} %>
     <% end %>
-  </table>
 
   <h2>Dead Plants</h2>
   <table>
-    <tr>
-      <th>Name</th>
-      <th>Species</th>
-      <th>Description</th>
-    </tr>
-    <% @dead_plants.each do |plant| %>
-      <tr>
-        <td><%= plant.name %></td>
-        <td><%= plant.species %></td>
-        <td><%= plant.description %></td>
-      </tr>
+    <% dead_plants.each do |plant| %>
+    <%= erb :'/plants/_block', locals: {plant: plant} %>
     <% end %>
-  </table>
 </div>
