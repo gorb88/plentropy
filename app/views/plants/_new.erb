@@ -1,0 +1,9 @@
+<h1> Add a plant</h1>
+<% if @user %>
+  <form class="" action="/plants" method="post">
+    <div><input type="text" name="plant[name]" placeholder="Name">
+    <div><input type="text" name="plant[species]" placeholder="Species">
+    <div><input type="text" name="plant[description]" placeholder="Description">
+    <div><input type="submit" value="Submit"></div>
+  </form>
+<% end %>
