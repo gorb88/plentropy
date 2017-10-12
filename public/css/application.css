@@ -6,6 +6,14 @@
    clear: both;
 }
 
+body{
+  background-color: #666666;
+}
+
+table{
+  background-color: #2CB674;
+}
+
 ul.nav {
   list-style-type: none;
   float: right;
@@ -16,7 +24,7 @@ ul.nav {
 li.nav {
   padding-left: 1em;
   padding-right: 1em;
-  border-right: 1px solid;
+  border-right: #2CB674 1px solid;
   float: left;
 }
 
@@ -30,7 +38,24 @@ li.nav {
   }
 
 header {
-  max-width: 700px;
   margin: 0 auto;
   overflow: auto;
+  background-color: #221F3E;
+  height: 200px;
+}
+
+div.logo-container{
+  vertical-align: bottom;
+}
+
+img#logo {
+    height: 175px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+a{
+  color: #2CB674;
 }

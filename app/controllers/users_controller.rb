@@ -23,3 +23,10 @@ get '/users/:id/plants' do
 
   erb :'/plants/index'
 end
+
+
+get '/users/:id' do
+  @user = User.find(params[:id])
+  @plants = @user.plants
+  erb :'/plants/index'
+end
