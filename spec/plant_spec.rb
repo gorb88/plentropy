@@ -6,6 +6,9 @@ describe Plant do
 
   it 'belongs to a user' do
 
+    user.plants << plant
+    expect(plant.user).to eq(user)
+
   end
 
   describe 'properties' do
