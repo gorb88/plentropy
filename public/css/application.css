@@ -6,6 +6,34 @@
    clear: both;
 }
 
+.container{
+  width: 700px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#gradient {
+  height: 100%;
+  background-color: white;
+  /*background: linear-gradient(0deg, white, #2CB674);*/
+}
+
+html {
+  height: 100%;
+}
+
+body{
+  height: 100%;
+}
+
+table{
+  border: solid 2px #2CB674;
+}
+
+td {
+  padding: 5px;
+}
+
 ul.nav {
   list-style-type: none;
   float: right;
@@ -16,7 +44,7 @@ ul.nav {
 li.nav {
   padding-left: 1em;
   padding-right: 1em;
-  border-right: 1px solid;
+  border-right: #2CB674 1px solid;
   float: left;
 }
 
@@ -30,7 +58,29 @@ li.nav {
   }
 
 header {
-  max-width: 700px;
   margin: 0 auto;
   overflow: auto;
+  background-color: #221F3E;
+  height: 200px;
+}
+
+div.logo-container{
+  vertical-align: bottom;
+}
+
+img#logo {
+    height: 175px;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+a{
+  color: #2CB674;
+  text-decoration: none;
+}
+
+div.container{
+  background-color: white;
 }

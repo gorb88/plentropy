@@ -1,0 +1,13 @@
+<div class="plant-block">
+  <div class="plant-photo">
+    <img src="/img/logo.png" alt="plant photo" />
+    <% if plant.living %>
+      <p class="alive-time">Alive <%= Time.now.day - plant.created_at.day %> days </p>
+    <% else %>
+      <p class="dead-time">Lived <%= (DateTime.now - DateTime.parse(plant.created_at)).to_i %> days </p>
+    <% end %>
+  </div>
+  <h2> <%= plant.name %> </h2>
+  <p class="species"> <%= plant.species %> </p>
+
+</div>
