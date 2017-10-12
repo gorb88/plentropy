@@ -16,3 +16,10 @@ post '/users' do
     erb :'/users/new'
   end
 end
+
+get '/users/:id/plants' do
+  @user = User.find(params[:id])
+  @plants = @user.plants
+
+  erb :'/plants/index'
+end
