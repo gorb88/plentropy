@@ -23,6 +23,14 @@ describe Reminder do
   end
 
   describe "schedule" do
+    it "can check if schedule occurs today" do
+      schedule = IceCube::Schedule.new
+      schedule.add_recurrence_rule( IceCube::Rule.yearly.day_of_month(13).day(:friday).month_of_year(:october) )
+      reminder.schedule = schedule.to_yaml
+
+      expect(IceCube::Schedule.from_yaml(reminder.schedule).occurs_on?(Date.parse("2017/10/13"))).to be true
+
+    end
 
   end
 
