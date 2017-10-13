@@ -23,8 +23,8 @@
     <div class="max-w-700 center wrap-float">
       <nav class="clearfix">
         <ul class="nav">
-          <% if @user %>
-          <li class="nav"><a href="/users/<%= @user.id %>"><%= @user.username %></a></li>
+          <% if session[:id] %>
+          <li class="nav"><a href="/users/<%= User.find(session[:id]).id %>"><%= User.find(session[:id]).username %></a></li>
           <li class="nav"><a href="/sessions/logout">logout</a></li>
           <% else %>
             <li class="nav"><a href="/users/new">register</a></li>
