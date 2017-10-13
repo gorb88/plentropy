@@ -5,7 +5,7 @@ class CreatePlants < ActiveRecord::Migration
       t.string :species
       t.string :description
       t.boolean :living, default: true
-      t.date :died_at 
+      t.datetime :died_at 
       t.integer :user_id
 
       t.timestamps null: false

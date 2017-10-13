@@ -20,7 +20,7 @@ end
   )
   plant.created_at = Faker::Time.between(DateTime.now - 3000, DateTime.now - 1)
   if !plant.living
-    plant.died_at = Faker::Time.between(plant.created_at, DateTime.now)
+    plant.died_at = Faker::Time.between(plant.created_at, DateTime.now).to_time
   end
 
   User.all.sample.plants << plant
