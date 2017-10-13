@@ -14,6 +14,7 @@ gem 'rake'
 gem 'faker'
 gem 'bcrypt'
 gem 'shotgun', '~>0.9.1'
+gem 'ice_cube'
 
 group :test do
   gem 'shoulda-matchers'

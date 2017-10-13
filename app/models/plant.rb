@@ -1,5 +1,6 @@
 class Plant < ActiveRecord::Base
   belongs_to :user
+  has_many :reminders
 
   def lifespan
     if self.living
