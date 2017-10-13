@@ -65,7 +65,7 @@ header {
   height: 200px;
 }
 
-div.logo-container{
+div.logo-container {
   vertical-align: bottom;
 }
 
@@ -83,13 +83,20 @@ a{
 }
 
 
-div.plant-block{
+div.plant-block {
   overflow: auto;
   display: inline-block;
   width: 300px;
 }
 
-.plant-photo{
+div.plant-show {
+  overflow: auto;
+  margin: auto;
+  width: 700px;
+}
+
+
+.plant-photo {
   display: block;
   width: 250px;
   height: auto;
@@ -98,13 +105,13 @@ div.plant-block{
   position: relative;
 }
 
-.alive-time{
+.alive-time {
   background-color: #221F3E;
   color: #2CB674;
 
 }
 
-.dead-time{
+.dead-time {
 
   background-color: #221F3E;
   color: #C54F2B

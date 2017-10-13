@@ -1,0 +1,14 @@
+<div class="plant-show">
+  <div class="plant-photo-container ">
+    <img class="plant-photo" src="/img/logo.png" alt="plant photo" />
+    <% if @plant.living %>
+      <span class="alive-time">Alive <%= @plant.lifespan %> days </p>
+    <% else %>
+      <span class="dead-time">Lived <%= @plant.lifespan %> days </p>
+    <% end %>
+  </div>
+  <h2> <%= @plant.name %> </h2>
+  <p class="species"> <%= @plant.species %> </p>
+  <p class="description"> <%= @plant.description %> </p>
+
+</div>
