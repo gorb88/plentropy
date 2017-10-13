@@ -20,3 +20,10 @@ post "/plants" do
     redirect '/'
   end
 end
+
+get "/plants/:id" do
+  @plant = Plant.find(params[:id])
+
+
+  erb :'/plants/show'
+end
